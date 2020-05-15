@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}" />
+  </head>
+
+  <body>
+    <h1>Home</h1>
+    <img src="{% static 'cat.jpg' %}" alt="straycat" />
+    <a href="{% url 'contact' %}">Go to contact</a>
+    <button onclick="onClickChange()">Click ME</button>
+
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+  </body>
+</html>
